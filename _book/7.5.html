@@ -1,0 +1,474 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>7.5 PrintStream和PrintWriter · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="7.6.html" />
+    
+    
+    <link rel="prev" href="7.4.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <a target="_blank" href="https://ivanmao714.github.io/">
+            
+                    
+                    Ivan Mao Learning Book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    1.String和StringBuilder的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    2.ArrayList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    3.面向对象三大特性、接口、抽象类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    4.集合类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    5.Java泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    6.Java多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    7.IO
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="7.1.html">
+            
+                <a href="7.1.html">
+            
+                    
+                    7.1 FIle对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.2" data-path="7.2.html">
+            
+                <a href="7.2.html">
+            
+                    
+                    7.2 InputStream/OutputStream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.3" data-path="7.3.html">
+            
+                <a href="7.3.html">
+            
+                    
+                    7.3 IO的一些名词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.4" data-path="7.4.html">
+            
+                <a href="7.4.html">
+            
+                    
+                    7.4 Reader/Writer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.7.5" data-path="7.5.html">
+            
+                <a href="7.5.html">
+            
+                    
+                    7.5 PrintStream和PrintWriter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.6" data-path="7.6.html">
+            
+                <a href="7.6.html">
+            
+                    
+                    7.6 使用Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    8.异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >7.5 PrintStream和PrintWriter</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="75-printstream&#x548C;printwriter">7.5 PrintStream&#x548C;PrintWriter</h1>
+<p><code>PrintStream</code>&#x662F;&#x4E00;&#x79CD;<code>FilterOutputStream</code>&#xFF0C;&#x5B83;&#x5728;<code>OutputStream</code>&#x7684;&#x63A5;&#x53E3;&#x4E0A;&#xFF0C;&#x989D;&#x5916;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x5199;&#x5165;&#x5404;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<ul>
+<li>&#x5199;&#x5165;<code>int</code>&#xFF1A;<code>print(int)</code></li>
+<li>&#x5199;&#x5165;<code>boolean</code>&#xFF1A;<code>print(boolean)</code></li>
+<li>&#x5199;&#x5165;<code>String</code>&#xFF1A;<code>print(String)</code></li>
+<li>&#x5199;&#x5165;<code>Object</code>&#xFF1A;<code>print(Object)</code>&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x76F8;&#x5F53;&#x4E8E;<code>print(object.toString())</code></li>
+<li>...</li>
+</ul>
+<p>&#x4EE5;&#x53CA;&#x5BF9;&#x5E94;&#x7684;&#x4E00;&#x7EC4;<code>println()</code>&#x65B9;&#x6CD5;&#xFF0C;&#x5B83;&#x4F1A;&#x81EA;&#x52A8;&#x52A0;&#x4E0A;&#x6362;&#x884C;&#x7B26;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x7ECF;&#x5E38;&#x4F7F;&#x7528;&#x7684;<code>System.out.println()</code>&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x4F7F;&#x7528;<code>PrintStream</code>&#x6253;&#x5370;&#x5404;&#x79CD;&#x6570;&#x636E;&#x3002;&#x5176;&#x4E2D;&#xFF0C;<code>System.out</code>&#x662F;&#x7CFB;&#x7EDF;&#x9ED8;&#x8BA4;&#x63D0;&#x4F9B;&#x7684;<code>PrintStream</code>&#xFF0C;&#x8868;&#x793A;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>System.out.print(12345); // &#x8F93;&#x51FA;12345
+System.out.print(new Object()); // &#x8F93;&#x51FA;&#x7C7B;&#x4F3C;java.lang.Object@3c7a835a
+System.out.println(&quot;Hello&quot;); // &#x8F93;&#x51FA;Hello&#x5E76;&#x6362;&#x884C;
+</code></pre><p><code>System.err</code>&#x662F;&#x7CFB;&#x7EDF;&#x9ED8;&#x8BA4;&#x63D0;&#x4F9B;&#x7684;&#x6807;&#x51C6;&#x9519;&#x8BEF;&#x8F93;&#x51FA;&#x3002;</p>
+<p><code>PrintStream</code>&#x548C;<code>OutputStream</code>&#x76F8;&#x6BD4;&#xFF0C;&#x9664;&#x4E86;&#x6DFB;&#x52A0;&#x4E86;&#x4E00;&#x7EC4;<code>print()</code>/<code>println()</code>&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x6253;&#x5370;&#x5404;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x6BD4;&#x8F83;&#x65B9;&#x4FBF;&#x5916;&#xFF0C;&#x5B83;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x989D;&#x5916;&#x7684;&#x4F18;&#x70B9;&#xFF0C;&#x5C31;&#x662F;&#x4E0D;&#x4F1A;&#x629B;&#x51FA;<code>IOException</code>&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5728;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x4E0D;&#x5FC5;&#x6355;&#x83B7;<code>IOException</code>&#x3002;</p>
+<h3 id="printwriter">PrintWriter</h3>
+<p><code>PrintStream</code>&#x6700;&#x7EC8;&#x8F93;&#x51FA;&#x7684;&#x603B;&#x662F;byte&#x6570;&#x636E;&#xFF0C;&#x800C;<code>PrintWriter</code>&#x5219;&#x662F;&#x6269;&#x5C55;&#x4E86;<code>Writer</code>&#x63A5;&#x53E3;&#xFF0C;&#x5B83;&#x7684;<code>print()</code>/<code>println()</code>&#x65B9;&#x6CD5;&#x6700;&#x7EC8;&#x8F93;&#x51FA;&#x7684;&#x662F;<code>char</code>&#x6570;&#x636E;&#x3002;&#x4E24;&#x8005;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x51E0;&#x4E4E;&#x662F;&#x4E00;&#x6A21;&#x4E00;&#x6837;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">import</span> java.io.*;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span>     </span>{
+        StringWriter buffer = <span class="hljs-keyword">new</span> StringWriter();
+        <span class="hljs-keyword">try</span> (PrintWriter pw = <span class="hljs-keyword">new</span> PrintWriter(buffer)) {
+            pw.println(<span class="hljs-string">&quot;Hello&quot;</span>);
+            pw.println(<span class="hljs-number">12345</span>);
+            pw.println(<span class="hljs-keyword">true</span>);
+        }
+        System.out.println(buffer.toString());
+    }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="7.4.html" class="navigation navigation-prev " aria-label="Previous page: 7.4 Reader/Writer">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="7.6.html" class="navigation navigation-next " aria-label="Next page: 7.6 使用Files">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"7.5 PrintStream和PrintWriter","level":"1.2.7.5","depth":3,"next":{"title":"7.6 使用Files","level":"1.2.7.6","depth":3,"path":"7.6.md","ref":"7.6.md","articles":[]},"previous":{"title":"7.4 Reader/Writer","level":"1.2.7.4","depth":3,"path":"7.4.md","ref":"7.4.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"7.5.md","mtime":"2022-08-08T07:30:31.830Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-26T03:37:17.463Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
